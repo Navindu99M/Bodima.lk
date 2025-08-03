@@ -1,0 +1,2673 @@
+{
+  "id": "0",
+  "name": "bodima_backend-db",
+  "createdAt": "2025-03-17T09:51:58.248Z",
+  "updatedAt": "2025-03-17T09:51:58.248Z",
+  "databaseType": "mysql",
+  "tables": [
+    {
+      "id": "1",
+      "name": "owners",
+      "x": 479.3539630691879,
+      "y": 513.9680501779535,
+      "fields": [
+        {
+          "id": "2",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1740997442251
+        },
+        {
+          "id": "3",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1741005158065
+        },
+        {
+          "id": "4",
+          "name": "user_type_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740997460875
+        },
+        {
+          "id": "5",
+          "name": "property_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740997470803
+        },
+        {
+          "id": "6",
+          "name": "created_at",
+          "type": {
+            "name": "timestamp",
+            "id": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740997481926
+        },
+        {
+          "id": "7",
+          "name": "updated_at",
+          "type": {
+            "name": "timestamp",
+            "id": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740997512788
+        }
+      ],
+      "indexes": [],
+      "color": "#ff6b8a",
+      "createdAt": 1740997442251,
+      "isView": false,
+      "order": 17,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "8",
+      "name": "user_type",
+      "x": 839.7052614549401,
+      "y": 71.99151965033757,
+      "fields": [
+        {
+          "id": "9",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1740999005028
+        },
+        {
+          "id": "10",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1740999017952
+        },
+        {
+          "id": "11",
+          "name": "type",
+          "type": {
+            "name": "enum",
+            "id": "enum"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740999070857
+        },
+        {
+          "id": "12",
+          "name": "created_at",
+          "type": {
+            "name": "timestamp",
+            "id": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740999283624
+        },
+        {
+          "id": "13",
+          "name": "updated_at",
+          "type": {
+            "name": "timestamp",
+            "id": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740999289825
+        }
+      ],
+      "indexes": [],
+      "color": "#8eb7ff",
+      "createdAt": 1740999005028,
+      "isView": false,
+      "order": 18,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "14",
+      "name": "listed_for_options",
+      "schema": "bodima_backend",
+      "x": -276.07944515170675,
+      "y": 177.96802205365094,
+      "fields": [
+        {
+          "id": "15",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "16",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "17",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "65535",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "18",
+          "name": "icon",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "19",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "20",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "21",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "15"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "22",
+          "name": "listed_for_options_name_unique",
+          "unique": true,
+          "fieldIds": [
+            "16"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#ff6b8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "23",
+      "name": "jobs",
+      "schema": "bodima_backend",
+      "x": 1050,
+      "y": 1100,
+      "fields": [
+        {
+          "id": "24",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "25",
+          "name": "queue",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "26",
+          "name": "payload",
+          "type": {
+            "id": "longtext",
+            "name": "longtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "4294967295",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "27",
+          "name": "attempts",
+          "type": {
+            "id": "tinyint",
+            "name": "tinyint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "28",
+          "name": "reserved_at",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "29",
+          "name": "available_at",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "30",
+          "name": "created_at",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "31",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "24"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "32",
+          "name": "jobs_queue_index",
+          "unique": false,
+          "fieldIds": [
+            "25"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#ff6b8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "33",
+      "name": "cache_locks",
+      "schema": "bodima_backend",
+      "x": 606.0660171779821,
+      "y": 1206.066017177982,
+      "fields": [
+        {
+          "id": "34",
+          "name": "key",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "35",
+          "name": "owner",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "36",
+          "name": "expiration",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "37",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "34"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#7175fa",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "38",
+      "name": "failed_jobs",
+      "schema": "bodima_backend",
+      "x": 1850,
+      "y": 1100,
+      "fields": [
+        {
+          "id": "39",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "40",
+          "name": "uuid",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "41",
+          "name": "connection",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "65535",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "42",
+          "name": "queue",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "65535",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "43",
+          "name": "payload",
+          "type": {
+            "id": "longtext",
+            "name": "longtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "4294967295",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "44",
+          "name": "exception",
+          "type": {
+            "id": "longtext",
+            "name": "longtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "4294967295",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "45",
+          "name": "failed_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "default": "current_timestamp()",
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "46",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "39"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "47",
+          "name": "failed_jobs_uuid_unique",
+          "unique": true,
+          "fieldIds": [
+            "40"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#b067e9",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "48",
+      "name": "cache",
+      "schema": "bodima_backend",
+      "x": 1450,
+      "y": 1100,
+      "fields": [
+        {
+          "id": "49",
+          "name": "key",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "50",
+          "name": "value",
+          "type": {
+            "id": "mediumtext",
+            "name": "mediumtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "16777215",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "51",
+          "name": "expiration",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "52",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "49"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#c05dcf",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "53",
+      "name": "tenants",
+      "schema": "bodima_backend",
+      "x": 480.2689693490224,
+      "y": -221.339522019592,
+      "fields": [
+        {
+          "id": "54",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "55",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1741005175309
+        },
+        {
+          "id": "56",
+          "name": "user_type_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "57",
+          "name": "property_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "58",
+          "name": "move_in_date",
+          "type": {
+            "id": "date",
+            "name": "date"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "59",
+          "name": "move_out_date",
+          "type": {
+            "id": "date",
+            "name": "date"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "60",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "61",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        }
+      ],
+      "indexes": [
+        {
+          "id": "62",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "54"
+          ],
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "63",
+          "name": "tenants_user_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "56"
+          ],
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "64",
+          "name": "tenants_property_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "57"
+          ],
+          "createdAt": 1740995261601
+        }
+      ],
+      "color": "#ff9f74",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261601,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "65",
+      "name": "variants",
+      "x": 479.88698423183575,
+      "y": 773.6239461915674,
+      "fields": [
+        {
+          "id": "66",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1741001923766
+        },
+        {
+          "id": "67",
+          "name": "property_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1741003608265
+        },
+        {
+          "id": "68",
+          "name": "property_variants_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1741001951942
+        }
+      ],
+      "indexes": [],
+      "color": "#ff6363",
+      "createdAt": 1741001923766,
+      "isView": false,
+      "order": 19,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "69",
+      "name": "property_feature",
+      "schema": "bodima_backend",
+      "x": 94.50309875917256,
+      "y": -85.62103656478925,
+      "fields": [
+        {
+          "id": "70",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": true,
+          "primaryKey": true,
+          "createdAt": 1740997263617
+        },
+        {
+          "id": "71",
+          "name": "property_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1741003592530
+        },
+        {
+          "id": "72",
+          "name": "features_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "73",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "72"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "74",
+          "name": "property_feature_feature_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "72"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#42e0c0",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "75",
+      "name": "migrations",
+      "schema": "bodima_backend",
+      "x": 206.06601717798213,
+      "y": 1206.066017177982,
+      "fields": [
+        {
+          "id": "76",
+          "name": "id",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "77",
+          "name": "migration",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "78",
+          "name": "batch",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261601
+        }
+      ],
+      "indexes": [
+        {
+          "id": "79",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "76"
+          ],
+          "createdAt": 1740995261601
+        }
+      ],
+      "color": "#42e0c0",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261601,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "80",
+      "name": "job_batches",
+      "schema": "bodima_backend",
+      "x": 2100,
+      "y": 600,
+      "fields": [
+        {
+          "id": "81",
+          "name": "id",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "82",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "83",
+          "name": "total_jobs",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "84",
+          "name": "pending_jobs",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "85",
+          "name": "failed_jobs",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "86",
+          "name": "failed_job_ids",
+          "type": {
+            "id": "longtext",
+            "name": "longtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "4294967295",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "87",
+          "name": "options",
+          "type": {
+            "id": "mediumtext",
+            "name": "mediumtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "16777215",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "88",
+          "name": "cancelled_at",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "89",
+          "name": "created_at",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "90",
+          "name": "finished_at",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        }
+      ],
+      "indexes": [
+        {
+          "id": "91",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "81"
+          ],
+          "createdAt": 1740995261601
+        }
+      ],
+      "color": "#4dee8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261601,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "92",
+      "name": "property_types",
+      "schema": "bodima_backend",
+      "x": -274.13375897113275,
+      "y": 460.3373808827549,
+      "fields": [
+        {
+          "id": "93",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "94",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "95",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "65535",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "96",
+          "name": "icon",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "97",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "98",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        }
+      ],
+      "indexes": [
+        {
+          "id": "99",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "93"
+          ],
+          "createdAt": 1740995261601
+        }
+      ],
+      "color": "#9ef07a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261601,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "100",
+      "name": "sessions",
+      "schema": "bodima_backend",
+      "x": 1700,
+      "y": 600,
+      "fields": [
+        {
+          "id": "101",
+          "name": "id",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "102",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "103",
+          "name": "ip_address",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "45",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "104",
+          "name": "user_agent",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "65535",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "105",
+          "name": "payload",
+          "type": {
+            "id": "longtext",
+            "name": "longtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "4294967295",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "106",
+          "name": "last_activity",
+          "type": {
+            "id": "int",
+            "name": "int"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261600
+        }
+      ],
+      "indexes": [
+        {
+          "id": "107",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "101"
+          ],
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "108",
+          "name": "sessions_user_id_index",
+          "unique": false,
+          "fieldIds": [
+            "102"
+          ],
+          "createdAt": 1740995261600
+        },
+        {
+          "id": "109",
+          "name": "sessions_last_activity_index",
+          "unique": false,
+          "fieldIds": [
+            "106"
+          ],
+          "createdAt": 1740995261600
+        }
+      ],
+      "color": "#4dee8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261600,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "110",
+      "name": "payment_durations",
+      "schema": "bodima_backend",
+      "x": -274.469232805062,
+      "y": 749.655421895791,
+      "fields": [
+        {
+          "id": "111",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261603
+        },
+        {
+          "id": "112",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261603
+        },
+        {
+          "id": "113",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261603
+        },
+        {
+          "id": "114",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261603
+        }
+      ],
+      "indexes": [
+        {
+          "id": "115",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "111"
+          ],
+          "createdAt": 1740995261603
+        },
+        {
+          "id": "116",
+          "name": "payment_durations_name_unique",
+          "unique": true,
+          "fieldIds": [
+            "112"
+          ],
+          "createdAt": 1740995261603
+        }
+      ],
+      "color": "#42e0c0",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "117",
+      "name": "property_variants",
+      "schema": "bodima_backend",
+      "x": 826.2492823749005,
+      "y": 709.7509807678153,
+      "fields": [
+        {
+          "id": "118",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "119",
+          "name": "variant_name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "120",
+          "name": "variant_value",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "121",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "122",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        }
+      ],
+      "indexes": [
+        {
+          "id": "123",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "118"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "124",
+          "name": "property_variants_property_id_foreign",
+          "unique": false,
+          "fieldIds": [],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#ffe374",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "125",
+      "name": "reviews",
+      "schema": "bodima_backend",
+      "x": 92.26207038626058,
+      "y": -398.4005065521919,
+      "fields": [
+        {
+          "id": "126",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "127",
+          "name": "tenant_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "128",
+          "name": "property_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "129",
+          "name": "rating",
+          "type": {
+            "id": "tinyint",
+            "name": "tinyint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "130",
+          "name": "review",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "65535",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "131",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "132",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        }
+      ],
+      "indexes": [
+        {
+          "id": "133",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "126"
+          ],
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "134",
+          "name": "reviews_tenant_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "127"
+          ],
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "135",
+          "name": "reviews_property_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "128"
+          ],
+          "createdAt": 1740995261601
+        }
+      ],
+      "color": "#8a61f5",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261601,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "136",
+      "name": "users",
+      "schema": "bodima_backend",
+      "x": 477.26539711395014,
+      "y": 103.00485278943826,
+      "fields": [
+        {
+          "id": "137",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "138",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "139",
+          "name": "email",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "140",
+          "name": "phone",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "141",
+          "name": "address",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "65535",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "142",
+          "name": "email_verified_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "143",
+          "name": "password",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "144",
+          "name": "remember_token",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "100",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "145",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "146",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261601
+        }
+      ],
+      "indexes": [
+        {
+          "id": "147",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "137"
+          ],
+          "createdAt": 1740995261601
+        },
+        {
+          "id": "148",
+          "name": "users_email_unique",
+          "unique": true,
+          "fieldIds": [
+            "139"
+          ],
+          "createdAt": 1740995261601
+        }
+      ],
+      "color": "#ffe374",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261601,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "149",
+      "name": "features",
+      "schema": "bodima_backend",
+      "x": -279.26088315961596,
+      "y": -143.26598370075968,
+      "fields": [
+        {
+          "id": "150",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "151",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "152",
+          "name": "icon",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "153",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "65535",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "154",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "155",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "156",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "150"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "157",
+      "name": "properties",
+      "schema": "bodima_backend",
+      "x": 100,
+      "y": 100,
+      "fields": [
+        {
+          "id": "158",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "159",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1741003749067
+        },
+        {
+          "id": "160",
+          "name": "property_type_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "161",
+          "name": "listed_for_option_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "162",
+          "name": "property_feature_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1740997141457
+        },
+        {
+          "id": "163",
+          "name": "variants_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1741002142300
+        },
+        {
+          "id": "164",
+          "name": "payment_duration_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "165",
+          "name": "title",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "166",
+          "name": "slug",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": true,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "167",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "65535",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "168",
+          "name": "price",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "precision": 15,
+          "scale": 2,
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "169",
+          "name": "address",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "170",
+          "name": "city",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "171",
+          "name": "state",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "172",
+          "name": "country",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "255",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "173",
+          "name": "postal_code",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "20",
+          "default": "NULL",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "174",
+          "name": "latitude",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "precision": 10,
+          "scale": 7,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "175",
+          "name": "longitude",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "precision": 10,
+          "scale": 7,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "176",
+          "name": "is_featured",
+          "type": {
+            "id": "tinyint",
+            "name": "tinyint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "default": "0",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "177",
+          "name": "status",
+          "type": {
+            "id": "enum",
+            "name": "enum"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "9",
+          "default": "'draft'",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "178",
+          "name": "main_image",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "character_maximum_length": "255",
+          "collation": "utf8mb4_unicode_ci",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "179",
+          "name": "additional_images",
+          "type": {
+            "id": "longtext",
+            "name": "longtext"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "character_maximum_length": "4294967295",
+          "default": "NULL",
+          "collation": "utf8mb4_bin",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "180",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "181",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "NULL",
+          "createdAt": 1740995261602
+        }
+      ],
+      "indexes": [
+        {
+          "id": "182",
+          "name": "PRIMARY",
+          "unique": true,
+          "fieldIds": [
+            "158"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "183",
+          "name": "properties_slug_unique",
+          "unique": true,
+          "fieldIds": [
+            "166"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "184",
+          "name": "properties_user_id_foreign",
+          "unique": false,
+          "fieldIds": [],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "185",
+          "name": "properties_listed_for_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "161"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "186",
+          "name": "properties_property_type_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "160"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "187",
+          "name": "properties_payment_duration_id_foreign",
+          "unique": false,
+          "fieldIds": [
+            "164"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "188",
+          "name": "properties_city_state_country_index",
+          "unique": false,
+          "fieldIds": [
+            "170",
+            "171",
+            "172"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "189",
+          "name": "properties_price_index",
+          "unique": false,
+          "fieldIds": [
+            "168"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "190",
+          "name": "properties_is_featured_index",
+          "unique": false,
+          "fieldIds": [
+            "176"
+          ],
+          "createdAt": 1740995261602
+        },
+        {
+          "id": "191",
+          "name": "properties_status_index",
+          "unique": false,
+          "fieldIds": [
+            "177"
+          ],
+          "createdAt": 1740995261602
+        }
+      ],
+      "color": "#c05dcf",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1740995261602,
+      "diagramId": "6n5jh2wjhg38"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "192",
+      "name": "owners_property_id_fk",
+      "sourceTableId": "1",
+      "targetTableId": "157",
+      "sourceFieldId": "5",
+      "targetFieldId": "158",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741002567928,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "193",
+      "name": "owners_user_id_fk",
+      "sourceTableId": "1",
+      "targetTableId": "136",
+      "sourceFieldId": "3",
+      "targetFieldId": "137",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741005298184,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "194",
+      "name": "owners_user_id_fk",
+      "sourceTableId": "1",
+      "targetTableId": "8",
+      "sourceFieldId": "4",
+      "targetFieldId": "10",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741000480755,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "195",
+      "name": "properties_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "157",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "69",
+      "sourceFieldId": "158",
+      "targetFieldId": "71",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741003679539,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "196",
+      "name": "properties_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "157",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "65",
+      "sourceFieldId": "158",
+      "targetFieldId": "67",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741003671536,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "197",
+      "name": "properties_listed_for_id_foreign",
+      "sourceSchema": "bodima_backend",
+      "targetSchema": "bodima_backend",
+      "sourceTableId": "157",
+      "targetTableId": "14",
+      "sourceFieldId": "161",
+      "targetFieldId": "15",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "198",
+      "name": "properties_payment_duration_id_foreign",
+      "sourceSchema": "bodima_backend",
+      "targetSchema": "bodima_backend",
+      "sourceTableId": "157",
+      "targetTableId": "110",
+      "sourceFieldId": "164",
+      "targetFieldId": "111",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "199",
+      "name": "properties_property_type_id_foreign",
+      "sourceSchema": "bodima_backend",
+      "targetSchema": "bodima_backend",
+      "sourceTableId": "157",
+      "targetTableId": "92",
+      "sourceFieldId": "160",
+      "targetFieldId": "93",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "200",
+      "name": "properties_user_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "157",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "136",
+      "sourceFieldId": "159",
+      "targetFieldId": "137",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741003925057,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "201",
+      "name": "properties_variants_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "157",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "65",
+      "sourceFieldId": "163",
+      "targetFieldId": "66",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741002326971,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "202",
+      "name": "property_feature_feature_id_foreign",
+      "sourceSchema": "bodima_backend",
+      "targetSchema": "bodima_backend",
+      "sourceTableId": "69",
+      "targetTableId": "149",
+      "sourceFieldId": "72",
+      "targetFieldId": "150",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "203",
+      "name": "property_feature_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "69",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "157",
+      "sourceFieldId": "70",
+      "targetFieldId": "162",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1740997346782,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "205",
+      "name": "property_variants_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "117",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "65",
+      "sourceFieldId": "118",
+      "targetFieldId": "68",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741002113794,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "207",
+      "name": "reviews_property_id_foreign",
+      "sourceSchema": "bodima_backend",
+      "targetSchema": "bodima_backend",
+      "sourceTableId": "125",
+      "targetTableId": "157",
+      "sourceFieldId": "128",
+      "targetFieldId": "158",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "208",
+      "name": "reviews_tenant_id_foreign",
+      "sourceSchema": "bodima_backend",
+      "targetSchema": "bodima_backend",
+      "sourceTableId": "125",
+      "targetTableId": "53",
+      "sourceFieldId": "127",
+      "targetFieldId": "54",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "209",
+      "name": "tenants_property_id_foreign",
+      "sourceSchema": "bodima_backend",
+      "targetSchema": "bodima_backend",
+      "sourceTableId": "53",
+      "targetTableId": "157",
+      "sourceFieldId": "57",
+      "targetFieldId": "158",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1740995261603,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "210",
+      "name": "tenants_user_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "53",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "136",
+      "sourceFieldId": "55",
+      "targetFieldId": "137",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741005304948,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "211",
+      "name": "tenants_user_id_fk",
+      "sourceSchema": "bodima_backend",
+      "sourceTableId": "53",
+      "targetSchema": "bodima_backend",
+      "targetTableId": "8",
+      "sourceFieldId": "56",
+      "targetFieldId": "10",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741000456997,
+      "diagramId": "6n5jh2wjhg38"
+    },
+    {
+      "id": "212",
+      "name": "user_type_user_id_fk",
+      "sourceTableId": "8",
+      "targetTableId": "136",
+      "sourceFieldId": "10",
+      "targetFieldId": "137",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1741000400968,
+      "diagramId": "6n5jh2wjhg38"
+    }
+  ],
+  "dependencies": []
+}

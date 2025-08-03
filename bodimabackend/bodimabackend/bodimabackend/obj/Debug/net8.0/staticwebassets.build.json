@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "beLZTEvJdMylGwQqcn0mxcPrpI9bWKZ8NqJ4M1dxcz0=",
+  "Source": "bodimabackend",
+  "BasePath": "_content/bodimabackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

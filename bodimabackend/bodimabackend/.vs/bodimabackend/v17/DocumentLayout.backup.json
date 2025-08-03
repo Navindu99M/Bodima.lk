@@ -1,0 +1,255 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Migrations\\20250803202215_8042025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bodimabackend\\Migrations\\20250803202215_8042025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\services\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\services\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\repositories\\ipropertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\repositories\\ipropertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\services\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\services\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\models\\dtos\\createpropertyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\models\\dtos\\createpropertyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\helpers\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\helpers\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodimabackend\\bodimabackend\\bodimabackend\\repositories\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\repositories\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Models\\User.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\User.cs",
+              "RelativeToolTip": "bodimabackend\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T21:10:48.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "bodimabackend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAArwIkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:39:32.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Program.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Program.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Program.cs",
+              "RelativeToolTip": "bodimabackend\\Program.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAB8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:23:18.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250803202215_8042025.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Migrations\\20250803202215_8042025.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Migrations\\20250803202215_8042025.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Migrations\\20250803202215_8042025.cs",
+              "RelativeToolTip": "bodimabackend\\Migrations\\20250803202215_8042025.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T20:22:15.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PropertyService.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Services\\PropertyService.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Services\\PropertyService.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Services\\PropertyService.cs",
+              "RelativeToolTip": "bodimabackend\\Services\\PropertyService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAewCgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:50:13.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Property.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\Property.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Models\\Property.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\Property.cs",
+              "RelativeToolTip": "bodimabackend\\Models\\Property.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:31:33.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPropertyRepository.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Repositories\\IPropertyRepository.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Repositories\\IPropertyRepository.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Repositories\\IPropertyRepository.cs",
+              "RelativeToolTip": "bodimabackend\\Repositories\\IPropertyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T19:16:38.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreatePropertyRequest.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\DTOs\\CreatePropertyRequest.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Models\\DTOs\\CreatePropertyRequest.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\DTOs\\CreatePropertyRequest.cs",
+              "RelativeToolTip": "bodimabackend\\Models\\DTOs\\CreatePropertyRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:24:49.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Models\\DTOs\\LoginRequest.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "bodimabackend\\Models\\DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:49:22.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\DTOs\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Models\\DTOs\\RegisterRequest.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Models\\DTOs\\RegisterRequest.cs",
+              "RelativeToolTip": "bodimabackend\\Models\\DTOs\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:48:51.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPropertyService.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Services\\IPropertyService.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Services\\IPropertyService.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Services\\IPropertyService.cs",
+              "RelativeToolTip": "bodimabackend\\Services\\IPropertyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:59:03.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Helpers\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Helpers\\JwtTokenGenerator.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Helpers\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "bodimabackend\\Helpers\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:21:53.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\appsettings.json",
+              "RelativeDocumentMoniker": "bodimabackend\\appsettings.json",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\appsettings.json",
+              "RelativeToolTip": "bodimabackend\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-24T17:20:08.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PropertyRepository.cs",
+              "DocumentMoniker": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Repositories\\PropertyRepository.cs",
+              "RelativeDocumentMoniker": "bodimabackend\\Repositories\\PropertyRepository.cs",
+              "ToolTip": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\Repositories\\PropertyRepository.cs",
+              "RelativeToolTip": "bodimabackend\\Repositories\\PropertyRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T18:18:15.165Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
