@@ -4928,11 +4928,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\bodimabackend.csproj",
+      "projectUniqueName": "E:\\Bodima.lk\\BodimaProject\\Bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\bodimabackend.csproj",
       "projectName": "bodimabackend",
-      "projectPath": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\bodimabackend.csproj",
+      "projectPath": "E:\\Bodima.lk\\BodimaProject\\Bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\bodimabackend.csproj",
       "packagesPath": "C:\\Users\\navindu\\.nuget\\packages\\",
-      "outputPath": "E:\\Bodima.lk\\BodimaProject\\bodimabackend\\bodimabackend\\bodimabackend\\obj\\",
+      "outputPath": "E:\\Bodima.lk\\BodimaProject\\Bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft visual Studio Comm Shared\\NuGetPackages"

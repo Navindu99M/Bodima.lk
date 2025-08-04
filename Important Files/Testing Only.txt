@@ -1,0 +1,32 @@
+Testing For purposes
+
+{
+  "fullName": "Wijedasa Rathnayaka",
+  "email": "Wijedasa@gmail.com",
+  "password": "Navindu12345",
+  "phoneNumber": "0716896031",
+  "role": "Landlord"
+}
+
+
+{
+  "message": "Login successful",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJXaWplZGFzYUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJMYW5kbG9yZCIsIkZ1bGxOYW1lIjoiV2lqZWRhc2EgUmF0aG5heWFrYSIsImV4cCI6MTc1NDMzODc1NCwiaXNzIjoiYm9kaW1hYXBpIiwiYXVkIjoiYm9kaW1hY2xpZW50In0.QAQsFNfN29OI_vQZX0rZKEDMt35F7ywqGH1w3XjPVIU",
+  "user": {
+    "userId": 5,
+    "fullName": "Wijedasa Rathnayaka",
+    "email": "Wijedasa@gmail.com",
+    "role": "Landlord"
+  }
+}
+
+
+{
+  "title": "Badulla Home",
+  "description": "Very Good Home",
+  "address": "45 Badulla Haputhale",
+  "price": 95000
+}
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJXaWplZGFzYUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJMYW5kbG9yZCIsIkZ1bGxOYW1lIjoiV2lqZWRhc2EgUmF0aG5heWFrYSIsImV4cCI6MTc1NDM0MDkwMCwiaXNzIjoiYm9kaW1hYXBpIiwiYXVkIjoiYm9kaW1hY2xpZW50In0.-Ujl4cMJbmwd3soBvfBfwOhdVlOyBkrDLdxdBJmqG2w

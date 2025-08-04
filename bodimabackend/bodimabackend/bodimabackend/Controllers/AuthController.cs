@@ -7,6 +7,7 @@ using System.Text;
 using bodimabackend.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 
 namespace bodimabackend.Controllers
 {
@@ -106,29 +107,45 @@ namespace bodimabackend.Controllers
         //    return GetMyProperties();
         //}
     }
-
+    //------------------------------------------------------------------------------------------------------------------------------------
 
     [ApiController]
     [Route("api/[controller]")]
     public class PropertyController : ControllerBase
     {
+        private readonly AppDbContext _context;
         private readonly IPropertyService _propertyService;
 
-        public PropertyController(IPropertyService propertyService)
+        //public PropertyController(AppDbContext context)
+        //{
+        //    _context = context;
+        //}
+
+        //public PropertyController(IPropertyService propertyService)
+        //{
+        //    _propertyService = propertyService;
+        //}
+        public PropertyController(AppDbContext context, IPropertyService propertyService)
         {
+            _context = context;
             _propertyService = propertyService;
         }
 
+        [HttpGet]
         [Authorize(Roles = "Landlord")]
-        [HttpGet("my-properties")]
+        //[HttpGet("my-properties")]
         public async Task<IActionResult> GetMyProperties()
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            //var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            if (userId == null)
-                return Unauthorized();
+            //if (userId == null)
+            //    return Unauthorized();
 
-            var properties = await _propertyService.GetPropertiesByOwnerIdAsync(int.Parse(userId));
+            //var properties = await _propertyService.GetPropertiesByOwnerIdAsync(int.Parse(userId));
+            //return Ok(properties);
+
+            var ownerId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            var properties = await _propertyService.GetPropertiesByOwnerIdAsync(ownerId);
             return Ok(properties);
         }
 
@@ -160,5 +177,42 @@ namespace bodimabackend.Controllers
 
             return CreatedAtAction(nameof(GetMyProperties), new { id = createdProperty.PropertyId }, createdProperty);
         }
+
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Landlord")]
+        public async Task<IActionResult> UpdateProperty(int id, [FromBody] PropertyUpdate updatedProperty)
+        {
+            //var ownerId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            //var result = await _propertyService.UpdateAsync(id, property, ownerId);
+            //if (!result) return Forbid("You are not authorized or property not found.");
+
+            //return NoContent();
+
+            if (id != updatedProperty.PropertyId)
+                return BadRequest("ID mismatch.");
+
+            var existing = await _context.Properties.FindAsync(id);
+            if (existing == null)
+                return NotFound();
+
+            // 🔒 Extract current user's ID from token
+            var ownerId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
+
+            // 🔒 Ownership check
+            if (existing.OwnerId != ownerId)
+                return Forbid("You are not authorized to update this property.");
+
+            // ✅ Update fields
+            existing.Title = updatedProperty.Title;
+            existing.Description = updatedProperty.Description;
+            existing.Location = updatedProperty.Location;
+            existing.PricePerMonth = updatedProperty.PricePerMonth;
+            existing.IsAvailable = updatedProperty.IsAvailable;
+
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
+
 }

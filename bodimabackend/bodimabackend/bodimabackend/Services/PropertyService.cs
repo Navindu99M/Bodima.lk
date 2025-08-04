@@ -48,11 +48,25 @@ namespace bodimabackend.Services
             return property;
         }
 
-        public async Task<Property> UpdateAsync(Property property)
+        //public async Task<Property> UpdateAsync(Property property)
+        //{
+        //    await _repo.UpdateAsync(property);
+        //    await _repo.SaveAsync();
+        //    return property;
+        //}
+        public async Task<bool> UpdateAsync(int propertyId, Property updatedProperty, int ownerId)
         {
-            await _repo.UpdateAsync(property);
+            var existing = await _repo.GetByIdAsync(propertyId);
+            if(existing == null || existing.OwnerId != ownerId) return false;
+
+            existing.Title = updatedProperty.Title;
+            existing.Description = updatedProperty.Description;
+            existing.Location = updatedProperty.Location;
+            existing.PricePerMonth = updatedProperty.PricePerMonth;
+
+            await _repo.UpdateAsync(existing);
             await _repo.SaveAsync();
-            return property;
+            return true;
         }
 
         public async Task DeleteAsync(int id)

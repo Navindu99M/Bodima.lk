@@ -33,6 +33,16 @@
   },
   {
     "ContainingType": "bodimabackend.Controllers.PropertyController",
+    "Method": "GetMyProperties",
+    "RelativePath": "api/Property",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bodimabackend.Controllers.PropertyController",
     "Method": "CreateProperty",
     "RelativePath": "api/Property",
     "HttpMethod": "POST",
@@ -49,12 +59,23 @@
   },
   {
     "ContainingType": "bodimabackend.Controllers.PropertyController",
-    "Method": "GetMyProperties",
-    "RelativePath": "api/Property/my-properties",
-    "HttpMethod": "GET",
+    "Method": "UpdateProperty",
+    "RelativePath": "api/Property/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedProperty",
+        "Type": "bodimabackend.Models.DTOs.PropertyUpdate",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
