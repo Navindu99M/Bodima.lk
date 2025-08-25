@@ -10,7 +10,8 @@ namespace bodimabackend.Services
         Task<bool> UpdateAsync(int propertyId, Property updatedProperty, int ownerId);
         Task<IEnumerable<Property>> GetPropertiesByOwnerIdAsync(int ownerId);
         Task<Property> AddPropertyAsync(Property property);
-        Task DeleteAsync(int id);
+        //Task DeleteAsync(int id);
+        Task<bool> SoftDeletePropertyAsync(int propertyId, int ownerId);
 
     }
 }

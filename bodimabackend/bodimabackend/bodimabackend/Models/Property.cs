@@ -7,7 +7,7 @@
         public string Description { get; set; }
         public string Location { get; set; }
         public decimal PricePerMonth { get; set; }
-        public bool IsAvailable { get; set; }
+        public int IsAvailable { get; set; }
 
         // Foreign Key
         public int OwnerId { get; set; }

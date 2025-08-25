@@ -60,4 +60,4 @@ Setup Repositories - Done
 AuthController - Done
 JWT token generation - Done
 PropertyController to let landlords post properties - Done
-Property Controller Create done above and Read,Update - Done but Delete Not complete do it and go next step
+Property Controller CRUD Done(LandLoard only) - Done

@@ -7,10 +7,12 @@ namespace bodimabackend.Services
 {
     public class PropertyService : IPropertyService
     {
+        private readonly AppDbContext _context;
         private readonly IPropertyRepository _repo;
 
-        public PropertyService(IPropertyRepository repo)
+        public PropertyService(AppDbContext context, IPropertyRepository repo)
         {
+            _context = context;
             _repo = repo;
         }
 
@@ -69,14 +71,25 @@ namespace bodimabackend.Services
             return true;
         }
 
-        public async Task DeleteAsync(int id)
+        //public async Task DeleteAsync(int id)
+        //{
+        //    var prop = await _repo.GetByIdAsync(id);
+        //    if (prop != null)
+        //    {
+        //        await _repo.DeleteAsync(prop);
+        //        await _repo.SaveAsync();
+        //    }
+        //}
+
+        public async Task<bool> SoftDeletePropertyAsync(int propertyId, int ownerId)
         {
-            var prop = await _repo.GetByIdAsync(id);
-            if (prop != null)
-            {
-                await _repo.DeleteAsync(prop);
-                await _repo.SaveAsync();
-            }
+            var property = await _context.Properties.FindAsync(propertyId);
+            if(property == null || property.OwnerId != ownerId)
+                return false;
+
+            property.IsAvailable = 1;
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

@@ -1,0 +1,18 @@
+{
+  "fullName": "Kasun Kalhara",
+  "email": "Kasun@gmail.com",
+  "password": "Navindu12345",
+  "phoneNumber": "0718965214",
+  "role": "Landlord"
+}
+
+{
+  "message": "Login successful",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjYiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJLYXN1bkBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJMYW5kbG9yZCIsIkZ1bGxOYW1lIjoiS2FzdW4gS2FsaGFyYSIsImV4cCI6MTc1NDQyNDE2OCwiaXNzIjoiYm9kaW1hYXBpIiwiYXVkIjoiYm9kaW1hY2xpZW50In0.4p8ceZZEfUqGFq3uEt9XpMHwIEbHqdk4tE-t_WVMZBI",
+  "user": {
+    "userId": 6,
+    "fullName": "Kasun Kalhara",
+    "email": "Kasun@gmail.com",
+    "role": "Landlord"
+  }
+}

@@ -351,6 +351,10 @@ E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\b
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\appsettings.json
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.staticwebassets.endpoints.json
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.exe
+E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.deps.json
+E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.runtimeconfig.json
+E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.dll
+E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.pdb
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\Azure.Core.dll
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\Azure.Identity.dll
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\Humanizer.dll
@@ -516,9 +520,5 @@ E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\o
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\obj\Debug\net8.0\bodimabackend.dll
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\obj\Debug\net8.0\refint\bodimabackend.dll
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\obj\Debug\net8.0\bodimabackend.pdb
-E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.deps.json
-E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.runtimeconfig.json
-E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.dll
-E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.pdb
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\obj\Debug\net8.0\bodimabackend.genruntimeconfig.cache
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\obj\Debug\net8.0\ref\bodimabackend.dll

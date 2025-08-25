@@ -207,12 +207,27 @@ namespace bodimabackend.Controllers
             existing.Description = updatedProperty.Description;
             existing.Location = updatedProperty.Location;
             existing.PricePerMonth = updatedProperty.PricePerMonth;
-            existing.IsAvailable = updatedProperty.IsAvailable;
+            existing.IsAvailable = updatedProperty.IsAvailable ? 0 : 1;
 
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Landlord")]
+        public async Task<IActionResult> SoftDeleteProperty(int id)
+        {
+            var ownerId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
+
+            var result = await _propertyService.SoftDeletePropertyAsync(id, ownerId);
+
+            if (!result)
+                return NotFound("Property not found or access denied.");
+
+            return Ok("Property marked as unavailable (IsAvailable = 1).");
+        }
+
     }
 
 }
