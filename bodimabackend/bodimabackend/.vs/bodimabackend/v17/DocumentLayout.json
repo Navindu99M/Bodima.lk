@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\Bodima.lk\\BodimaProject\\Bodima.lk\\bodimabackend\\bodimabackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bodima.lk\\BodimaProject\\Bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\Migrations\\20250805192847_8062025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bodimabackend\\Migrations\\20250805192847_8062025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\migrations\\20250805192847_8062025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|solutionrelative:bodimabackend\\migrations\\20250805192847_8062025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E581110-9E74-4AD8-BDAF-D16091621EFB}|bodimabackend\\bodimabackend.csproj|e:\\bodima.lk\\bodimaproject\\bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,8 +99,7 @@
               "RelativeToolTip": "bodimabackend\\Services\\PropertyService.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAUwFkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:50:13.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T17:50:13.146Z"
             },
             {
               "$type": "Document",
@@ -112,8 +111,7 @@
               "RelativeToolTip": "bodimabackend\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAMQAAAAAAAAAAAAiwNMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T16:39:32.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T16:39:32.458Z"
             },
             {
               "$type": "Document",
@@ -125,8 +123,7 @@
               "RelativeToolTip": "bodimabackend\\Models\\DTOs\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T16:49:22.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T16:49:22.294Z"
             },
             {
               "$type": "Document",
@@ -138,8 +135,7 @@
               "RelativeToolTip": "bodimabackend\\Models\\Property.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T19:31:33.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T19:31:33.927Z"
             },
             {
               "$type": "Document",
@@ -151,8 +147,7 @@
               "RelativeToolTip": "bodimabackend\\Services\\IPropertyService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:59:03.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T17:59:03.713Z"
             },
             {
               "$type": "Document",
@@ -164,8 +159,7 @@
               "RelativeToolTip": "bodimabackend\\Models\\DTOs\\PropertyUpdate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:08:36.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T20:08:36.196Z"
             },
             {
               "$type": "Document",
@@ -177,8 +171,7 @@
               "RelativeToolTip": "bodimabackend\\Models\\DTOs\\CreatePropertyRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T19:24:49.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T19:24:49.158Z"
             },
             {
               "$type": "Document",
@@ -190,8 +183,7 @@
               "RelativeToolTip": "bodimabackend\\Repositories\\PropertyRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T18:18:15.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T18:18:15.165Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "RelativeToolTip": "bodimabackend\\Models\\DTOs\\RegisterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T16:48:51.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T16:48:51.089Z"
             },
             {
               "$type": "Document",
