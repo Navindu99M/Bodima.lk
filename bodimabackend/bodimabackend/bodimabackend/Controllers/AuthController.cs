@@ -228,6 +228,35 @@ namespace bodimabackend.Controllers
             return Ok("Property marked as unavailable (IsAvailable = 1).");
         }
 
+        //Landloard Image controller part
+
+        [HttpPost("{id}/images")]
+        [Authorize(Roles = "Landlord")]
+        public async Task<IActionResult> UploadImage(int id, IFormFile file)
+        {
+            var ownerId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
+
+            var image = await _propertyService.AddImageAsync(id, file, ownerId);
+
+            if (image == null)
+                return Forbid("You are not authorized to upload images for this property.");
+
+            return Ok(image);
+        }
+
+        [HttpDelete("images/{imageId}")]
+        [Authorize(Roles = "Landlord")]
+        public async Task<IActionResult> DeleteImage(int imageId)
+        {
+            var ownerId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
+
+            var result = await _propertyService.DeleteImageAsync(imageId, ownerId);
+
+            if (!result)
+                return Forbid("You are not authorized to delete this image.");
+
+            return Ok("Image deleted successfully.");
+        }
     }
 
 }

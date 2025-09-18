@@ -91,5 +91,55 @@ namespace bodimabackend.Services
             await _context.SaveChangesAsync();
             return true;
         }
+
+        //Image
+        public async Task<PropertyImage> AddImageAsync(int propertyId, IFormFile file, int ownerId)
+        {
+            var property = await _context.Properties.FindAsync(propertyId);
+
+            if (property == null || property.OwnerId != ownerId)
+                throw new UnauthorizedAccessException("You cannot upload images for this property.");
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+            var filePath = Path.Combine(folderPath, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            var image = new PropertyImage
+            {
+                PropertyId = propertyId,
+                ImageUrl = $"/images/{fileName}"
+            };
+
+            _context.PropertyImages.Add(image);
+            await _context.SaveChangesAsync();
+
+            return image;
+        }
+
+
+
+        public async Task<bool> DeleteImageAsync(int imageId, int ownerId)
+        {
+            var image = await _context.PropertyImages
+                .Include(i => i.Property)
+                .FirstOrDefaultAsync(i => i.Id == imageId);
+
+            if (image == null || image.Property.OwnerId != ownerId)
+                return false;
+
+            _context.PropertyImages.Remove(image);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }

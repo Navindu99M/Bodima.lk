@@ -108,6 +108,8 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseStaticFiles(); // This serves wwwroot files
+
 
 app.MapControllers();
 

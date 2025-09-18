@@ -61,3 +61,4 @@ AuthController - Done
 JWT token generation - Done
 PropertyController to let landlords post properties - Done
 Property Controller CRUD Done(LandLoard only) - Done
+landloard photo upload - Done

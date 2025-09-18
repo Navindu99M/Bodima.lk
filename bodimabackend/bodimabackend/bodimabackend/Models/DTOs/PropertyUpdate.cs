@@ -8,5 +8,6 @@
         public string Location { get; set; }
         public decimal PricePerMonth { get; set; }
         public bool IsAvailable { get; set; }
+        //public List<string> Images { get; set; }   // only image URLs
     }
 }

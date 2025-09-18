@@ -13,5 +13,9 @@ namespace bodimabackend.Services
         //Task DeleteAsync(int id);
         Task<bool> SoftDeletePropertyAsync(int propertyId, int ownerId);
 
+        //Image
+        Task<PropertyImage> AddImageAsync(int propertyId, IFormFile file, int ownerId);
+        Task<bool> DeleteImageAsync(int imageId, int ownerId);
+
     }
 }

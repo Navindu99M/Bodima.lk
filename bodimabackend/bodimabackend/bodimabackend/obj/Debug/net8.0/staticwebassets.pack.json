@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Bodima.lk\\BodimaProject\\Bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\wwwroot\\images\\437c94f0-4cbf-47ef-9db4-f52326c78b45.jpg",
+      "PackagePath": "staticwebassets\\images\\437c94f0-4cbf-47ef-9db4-f52326c78b45.jpg"
+    },
+    {
+      "Id": "E:\\Bodima.lk\\BodimaProject\\Bodima.lk\\bodimabackend\\bodimabackend\\bodimabackend\\wwwroot\\images\\74259d8b-b6c6-4bdc-b690-ae01324ccb5e.jpg",
+      "PackagePath": "staticwebassets\\images\\74259d8b-b6c6-4bdc-b690-ae01324ccb5e.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.bodimabackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.bodimabackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.bodimabackend.props",
+      "PackagePath": "build\\bodimabackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.bodimabackend.props",
+      "PackagePath": "buildMultiTargeting\\bodimabackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.bodimabackend.props",
+      "PackagePath": "buildTransitive\\bodimabackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

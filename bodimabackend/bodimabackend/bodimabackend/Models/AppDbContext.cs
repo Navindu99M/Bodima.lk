@@ -9,6 +9,7 @@ namespace bodimabackend.Models
         public DbSet<User> Users { get; set; }
         public DbSet<Property> Properties { get; set; }
         public DbSet<Booking> Bookings { get; set; }
+        public DbSet<PropertyImage> PropertyImages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -32,6 +33,12 @@ namespace bodimabackend.Models
             .WithOne(b => b.Property)
             .HasForeignKey(b => b.PropertyId)
             .OnDelete(DeleteBehavior.Cascade);  // only allow this one to cascade
+
+            modelBuilder.Entity<Property>()
+            .HasMany(p => p.Images)
+            .WithOne(i => i.Property)
+            .HasForeignKey(i => i.PropertyId)
+            .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

@@ -349,6 +349,7 @@ E:\Bodima.lk\BodimaProject\bodimabackend\bodimabackend\bodimabackend\obj\Debug\n
 E:\Bodima.lk\BodimaProject\bodimabackend\bodimabackend\bodimabackend\obj\Debug\net8.0\ref\bodimabackend.dll
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\appsettings.Development.json
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\appsettings.json
+E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.staticwebassets.runtime.json
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.staticwebassets.endpoints.json
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.exe
 E:\Bodima.lk\BodimaProject\Bodima.lk\bodimabackend\bodimabackend\bodimabackend\bin\Debug\net8.0\bodimabackend.deps.json

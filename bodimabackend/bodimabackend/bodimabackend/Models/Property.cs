@@ -15,5 +15,7 @@
         // Navigation Properties
         public User Owner { get; set; }
         public ICollection<Booking> Bookings { get; set; }
+        public ICollection<PropertyImage> Images { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
