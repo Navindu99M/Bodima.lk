@@ -1,0 +1,64 @@
+Bodima Step by step
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Phase 1 : Project Setup : Project BackEnd and FrontEnd
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Phase 2 : Core Features
+
+🔐 Authentication
+JWT-based login/register APIs in .NET Core
+
+Secure protected routes in React
+
+🏘️ Property Listings
+Admin/Landlord can CRUD listings via API
+
+Users can view/search via React frontend
+
+🔍 Search & Filters
+By location, price range, type, etc.
+
+📩 Contact/Booking System
+Simple booking model (Booking table with UserId, PropertyId, etc.)
+
+Send booking request via frontend → API → store in DB
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+Phase 3: Testing & Deployment
+Use Postman to test APIs using swagger
+
+Deploy backend with IIS or Azure App Service
+
+Deploy frontend with Vercel, Netlify, or on the same server using dotnet + React build
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+---------------------------Help Guide---------------------------------------------------------------
+✅ Start with:
+Step 1: Models and DB schema
+Define User, Property, Booking, etc.
+
+Set up AppDbContext, migrations, and relationships.
+
+➡ Then move to:
+Step 2: API development
+Auth (JWT/token), register/login endpoints
+
+CRUD for Properties, Bookings
+
+➡ Finally:
+Step 3: Frontend setup
+React pages, fetch API data using Axios or Fetch
+
+Auth guard, role-based views (Landlord vs Boarder)
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+---------------------------Finished Parts-----------------------------------------------------------
+database schema and models - Done
+Setup Repositories - Done
+AuthController - Done
+JWT token generation - Done
+PropertyController to let landlords post properties - Done
+Property Controller CRUD Done(LandLoard only) - Done
+landloard photo upload - Done
